@@ -5,6 +5,10 @@ class circulo:
     def circunferencia(self):
         return 2 * self.PI * self.radio
 
-if __name__ == "__main__":
+    def area(self):
+        return self.PI * self.radio ** 2
+
+if __name__ == "__circulo__":
     instancia_circulo = circulo(10)
-    print(f"La circunferencia es: {instancia_circulo.circunferencia()}")
+    print(f"EL perimetro del circulo es: {instancia_circulo.circunferencia()}")
+    print(f"El area del circulo es: {instancia_circulo.area()}")
